@@ -569,21 +569,29 @@
             </li>
           </ul>
         </div>
-        <form class="mail-form">
-          <label class="mail-form-wrapper">
-            <span class="mail-form-field-desc">Subscribe</span>
-            <span class="mail-form-input-wrapper">
+        <div class="footer-form-wrapper">
+          <p class="footer-text-form">Subscribe</p>
+          <form class="form-footer">
+            <label class="footer-form-field-wrapper">
               <input
-                class="mail-form-input"
-                type="email"
-                name="mail-name"
+                class="footer-form-input"
+                type="mail"
                 placeholder="E-mail"
-                pattern="[a-zA-Za-яА-ЯіІїЇґҐєЄʼ]+"
               />
-              <button class="button-submit" type="submit">Subscribe</button>
-            </span>
-          </label>
-        </form>
+            </label>
+            <button class="button-footer-submit" type="submit">
+              Subscribe
+              <svg
+                class="footer-icon"
+                width="24"
+                height="24"
+                aria-label="telegram"
+              >
+                <use href="./images/icons.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
