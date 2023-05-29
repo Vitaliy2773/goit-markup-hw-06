@@ -503,18 +503,19 @@ body {
 }
 
 .footer-form-input {
+  background-color: transparent;
+  border: 1px solid var(--primary-bg-color);
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   width: 264px;
   height: 40px;
-  border: 1px solid var(--primary-bg-color);
-  background-color: transparent;
+  outline: none;
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  margin-left: 80px;
-
   padding-left: 16px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
+  color: var(--primary-bg-color);
 }
 
 .footer-form-input::placeholder {
@@ -773,6 +774,7 @@ body {
   letter-spacing: 0.02em;
   width: 100%;
   margin-bottom: 16px;
+  color: var(--primary-text-color);
 }
 
 .contact-form-input-wrapper {
@@ -786,7 +788,7 @@ body {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--primary-text-color);
+  color: var(--link-customers);
   margin-bottom: 4px;
 }
 
@@ -853,26 +855,24 @@ body {
   color: var(--link-customers);
 }
 
-.checkbox-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 16px;
-  height: 16px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 2px;
-  fill: transparent;
-}
-
-.checkbox-own {
-  visibility: hidden;
-}
-
-.checkbox-own:checked .icon-checkbox {
+.checkbox-own:checked + .checkbox-wrapper > .checkbox-icon {
   background-color: var(--btn-hover-color);
   border: none;
   fill: var(--primary-bg-color);
   border-color: var(--btn-hover-color);
+}
+
+.icon-checkbox {
+  cursor: pointer;
+}
+
+.checkbox-own {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-own:checked + .checkbox-wrapper > .checkbox-icon {
+  opacity: 1;
 }
 
 .checkbox-link {
