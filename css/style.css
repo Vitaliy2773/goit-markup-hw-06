@@ -859,7 +859,7 @@ body {
   color: var(--link-customers);
 }
 
-.checkbox-own:checked + .checkbox-wrapper > .checkbox-icon > .agreement-icon {
+.checkbox-own:checked + .checkbox-wrapper > .checkbox-icon {
   background-color: var(--btn-hover-color);
   border: none;
   fill: var(--primary-bg-color);
