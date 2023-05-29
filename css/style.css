@@ -871,10 +871,6 @@ body {
   position: absolute;
 }
 
-.checkbox-own:checked + .checkbox-wrapper > .checkbox-icon {
-  opacity: 1;
-}
-
 .checkbox-link {
   color: var(--accent-color);
 }
